@@ -14,7 +14,7 @@ for label in ['race', 'occupation']:
     data[label] = LabelEncoder().fit_transform(data[label])
 
 # Take the fields of interest and plug them into variable X
-X = data[['race', 'hours_per_week', 'occupation']]
+X = data[['race', 'hours_per_week', 'occupation', 'education', 'workclass']]
 # Make sure to provide the corresponding truth value
 Y = data['sex'].values.tolist()
 
